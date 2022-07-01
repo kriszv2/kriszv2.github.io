@@ -1,0 +1,236 @@
+/* ====== Globals ===== */
+*{
+    margin:0 auto;
+    padding:0;
+    font-family: 'Merriweather', serif;
+    font-family: 'Shippori Antique', sans-serif;
+    overflow-x: hidden;
+}
+html{
+    width:100%;
+    height: 100%;
+    
+}
+h1{
+    font-size: 2rem;
+    color: #101D42;
+    justify-content: center;
+    justify-items: center;
+    
+}
+hr{
+    
+    width: 100%;
+    color:bisque;
+    overflow: hidden;
+}
+
+h2{
+    text-align: center;
+    color: antiquewhite;
+    padding-top:20px;
+    font-size:2rem;
+    padding:60px;
+}
+
+
+/* ===== Classes ===== */
+
+.navbar{
+    height: 50px;
+    display: table;
+    width: 100%;
+    text-align:center;
+    background-color: #89D2DC;
+    
+    
+}
+
+.nav-name,.nav-links{
+    display:inline-block;
+    vertical-align: top;
+   
+}
+.nav-name{
+    
+    float:left;
+    margin-left: 20px;
+    
+}
+.nav-links{
+   text-align:center;
+   padding: 10px;
+   margin-right: 250px;
+    
+}
+.div-box1{
+    background-image: linear-gradient(to bottom,#89D2DC,#6564DB,#6564DB);
+    height: 700px;
+    padding: 30px;
+    overflow-y: hidden;
+    
+
+}
+@media (min-width:1920px){
+    .div-box3{
+        background-image: linear-gradient(to bottom,#0D1317,#0D1317,#0D1317);
+        height: 800px;
+        overflow: hidden;
+    }
+}
+@media (max-width:1919px){
+    .div-box3{
+        background-image: linear-gradient(to bottom,#0D1317,#0D1317,#0D1317);
+        height: 1400px;
+        overflow: hidden;
+    }
+}
+@media (max-width:962px){
+    .div-box3{
+        background-image: linear-gradient(to bottom,#0D1317,#0D1317,#0D1317);
+        height: 2640px;
+        overflow: hidden;
+    }
+}
+.div-box1-1{
+    position: relative;
+    display:flex;
+    overflow-y: hidden;
+    height: 700px;
+    margin: 50px;
+}
+.div-box1-1-2{
+
+    position: absolute;
+    
+    
+}
+.div-box1-1-1{
+    
+    width:60%;
+    position: absolute;
+}
+.img-box1-1-1{
+    
+    width:900px;
+    height: 600px;
+    margin: 15px;
+    justify-content: center;
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 20% 0);
+    
+}
+.div-box1-1-2 p:nth-child(1){
+   
+    margin-top: 150px;
+    margin-right: 180px;
+    margin-left: 650px;
+    font-size: 24px;
+    
+}
+.div-box1-1-2 :nth-child(2){
+    text-align: end;
+    margin-right: 180px;
+    
+    
+    font-size: 24px;
+    
+}
+
+/* ===== Non-related work experience part =====*/
+
+.parallelogram {
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 -80px 0 -70px;
+    
+    position: relative;
+      -webkit-clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+    -moz-clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+    clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+}
+.parallelogram img{
+    width: 620px;
+    height: 600px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+.parallelogram div{
+    position: absolute;
+    
+     color: rgb(255, 255, 255);
+     opacity: 0;
+     visibility: hidden;
+
+  }
+ .parallelogram:hover{
+    cursor: pointer;
+   }
+   
+.parallelogram:hover div{
+    bottom:40%;
+    top:40%;
+    right: 20%;
+    left: 35%;
+    position: absolute;
+    font-size: 2rem;
+    visibility: visible;
+    opacity: 1; 
+    
+}
+.parallelogram:hover img{
+    z-index:11;
+    opacity: 0.5;
+    overflow: hidden;
+}
+
+/*Skills */
+
+.div-box2{
+    height: 400px;
+    background-color: #2c1908;
+}
+.div-box2-menu{
+
+    text-align: center;
+    margin-left:500px;
+    margin-right: 500px;
+   
+}
+.div-box2-menu button{
+    background-color: transparent;
+    color:rgb(206, 206, 206);
+    opacity: 0.9;
+    border:none;
+    font-size: 1.5rem;
+    margin-right: 40px;
+    cursor:pointer;
+
+}
+.div-box2-menu hr{
+    color: grey;
+    opacity:0.3;
+}
+.div-box2-buttons{
+    text-align: center;
+    margin-top:20px;
+    
+}
+.div-box2-buttons button{
+    border: 1px;
+    font-weight: 600;
+    background-color: #89D2DC;
+    padding: 10px 20px;
+    cursor:pointer;
+    margin-right:15px;
+}
+.unhighlight{
+opacity:0.1;
+}
+
+/* ===== Projects ===== */
+
+.div-box4{
+    height: 800px;
+    background-color: #89D2DC;
+}

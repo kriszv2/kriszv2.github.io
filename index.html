@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Shippori+Antique&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Krisztian Valyi Portfolio</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                    <div class="nav-items">
+                        <div class="nav-links">
+                            <a href="https://www.linkedin.com/in/krisztian-valyi/" style="margin-right:20px"><img src="img/linkedin.svg" width="30px" alt="linkedin"></a>
+                            <a href="https://github.com/kriszv2" ><img src="img/github32.png" width="30px" alt="github"></a>
+                        </div>
+                        <h1 class="nav-name">Krisztian Valyi</h1>
+                    </div>
+                </div>
+            </nav>
+        </header>
+       <div class="div-box1">
+        <div class="div-box1-1">
+            <div class="div-box1-1-1">
+            <img class="img-box1-1-1" src="img/firstImage.jpg" alt="">
+            </div>
+            <div class="div-box1-1-2">
+                
+                <p><b style="color:rgb(224, 160, 42);">&lt;me&gt;</b><br>
+                    <i>Hello, my name is Krisztian Valyi a graduate software developer based in Edinburgh.
+                    A perfect candidate if you are looking for an inspired, dedicated and freshly graduated programmer!
+                </i></p>
+                <p><b style="color:rgb(224, 160, 42);text-align: end">&lt;/me&gt;</b> 
+                
+            </p>
+            </div>
+            
+        </div>
+       </div>
+       <hr>
+       
+       <div class="div-box2">
+        <h2>
+            Programming Skills
+        </h2>
+        <div class="div-box2-menu">
+        <button id="beginnerBtn">
+        Beginner
+        </button>
+        <button id="intermediateBtn">
+        Intermediate
+        </button>
+        <button id="proficientBtn">
+        Proficient
+        </button>
+<hr>
+        </div>
+        <div class="div-box2-buttons">
+            
+            <button class="proficient">HTML</button>
+            <button class="proficient">CSS</button>
+            <button class="intermediate">Javascript</button>
+            <button class="beginner">React</button>
+            <button class="intermediate">PHP</button>
+            <button class="beginner">Java</button>
+            <button class="intermediate">Bootstrap</button>
+            <button class="intermediate">Tailwind</button>
+            <button class="intermediate">Cypress</button>
+            <button class="beginner">AWS</button>
+
+        </div>
+       </div>
+       <hr>
+       <div class="div-box3">
+        
+        <h2>
+            Non-related work experience
+        </h2>
+        <div>
+            <div class="parallelogram">
+                <img src="img/admin.jpg">
+                    <div><b>Website Admin / Owner</b></div>  
+            </div>
+            <div class="parallelogram">
+                <img src="img/delivery.jpg">
+                <div><b>Delivery Driver</b></div>
+            </div>
+            <div class="parallelogram">
+                <img src="img/lifeguard.jpg">
+                <div><b>Lifeguard</b></div>
+            </div>
+            <div class="parallelogram">
+                <img src="img/waiter.jpg">
+                <div><b>Waiter</b></div>
+            </div>
+        </div>
+   </div>
+   <hr>
+   <div class="div-box4">
+    <h2>Projects</h2>
+   </div>
+   <script>
+    var begBtn = document.getElementById("beginnerBtn");
+    var intBtn = document.getElementById("intermediateBtn");
+    var profBtn = document.getElementById("proficientBtn");
+    begBtn.addEventListener("click", highlightBeg);
+    intBtn.addEventListener("click", highlightInt);
+    profBtn.addEventListener("click", highlightPro);
+
+
+    function highlightBeg() {
+        var list;
+        var resetList = document.querySelectorAll(".beginner, .intermediate, .proficient");
+        
+            for (var i = 0; i < resetList.length; ++i) {
+    resetList[i].classList.remove('unhighlight');
+    }
+        list = document.querySelectorAll(".intermediate, .proficient");
+    for (var i = 0; i < list.length; ++i) {
+    list[i].classList.add('unhighlight');
+        }
+    }
+    
+    
+    function highlightInt() {
+        var list;
+        var resetList = document.querySelectorAll(".beginner, .intermediate, .proficient");
+        for (var i = 0; i < resetList.length; ++i) {
+    resetList[i].classList.remove('unhighlight');
+    }
+    list = document.querySelectorAll(".beginner, .proficient");
+    for (var i = 0; i < list.length; ++i) {
+    list[i].classList.add('unhighlight');
+    }
+    }
+    function highlightPro() {
+        var list;
+        var resetList = document.querySelectorAll(".beginner, .intermediate, .proficient");
+        for (var i = 0; i < resetList.length; ++i) {
+            resetList[i].classList.remove('unhighlight');
+    }
+    list = document.querySelectorAll(".intermediate, .beginner");
+    for (var i = 0; i < list.length; ++i) {
+    list[i].classList.add('unhighlight');
+    }
+    }
+    
+    
+   </script>
+    </body>
+</html>
